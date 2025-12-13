@@ -1,268 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>I AM REAL BABIYA PROGRAMMER 🕊️ </title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;900&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #10151f, #0e1f24);
-      color: #f0f0f0;
-      min-height: 100vh;
-      overflow-x: hidden;
-      padding-top: 60px;
-    }
-
-    .topbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 60px;
-      background: rgba(16, 21, 31, 0.95);
-      backdrop-filter: blur(12px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-    }
-
-    .topbar .title {
-      font-size: 20px;
-      font-weight: 900;
-      background: linear-gradient(to right, #42e9f5, #a0f0ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      letter-spacing: 1px;
-    }
-
-    .login-topbar {
-      position: absolute;
-      right: 20px;
-      top: 14px;
-      background: #42e9f5;
-      padding: 8px 16px;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 14px;
-      color: black;
-      text-decoration: none;
-      transition: background 0.25s ease;
-    }
-
-    .login-topbar:hover {
-      background: #2bcfdc;
-    }
-
-    .menu-btn {
-      position: fixed;
-      top: 16px;
-      left: 20px;
-      font-size: 26px;
-      cursor: pointer;
-      color: #42e9f5;
-      z-index: 1001;
-    }
-
-    .side-menu {
-      position: fixed;
-      top: 0;
-      left: -260px;
-      width: 240px;
-      height: 100%;
-      background: rgba(16, 21, 31, 0.97);
-      backdrop-filter: blur(10px);
-      padding: 20px;
-      box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
-      transition: left 0.3s ease;
-      z-index: 998;
-    }
-
-    .side-menu.active {
-      left: 0;
-    }
-
-    .side-title {
-      font-size: 20px;
-      font-weight: 800;
-      color: #42e9f5;
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    .info-box {
-      margin-bottom: 15px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .info-box a {
-      font-size: 13px;
-      color: black;
-      text-decoration: none;
-      background: #42e9f5;
-      padding: 10px 20px;
-      border-radius: 8px;
-      width: 100%;
-      text-align: center;
-      transition: background 0.3s ease;
-    }
-
-    .info-box a:hover {
-      background: #2bcfdc;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .desc {
-      font-size: 16px;
-      text-align: center;
-      color: #ccc;
-      margin-bottom: 40px;
-    }
-
-    .plans {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .plan {
-      background: rgba(66, 233, 245, 0.06);
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 4px 24px rgba(66, 233, 245, 0.25);
-    }
-
-    .plan h3 {
-      margin-top: 0;
-      font-size: 20px;
-      color: #42e9f5;
-    }
-
-    .plan ul {
-      padding-left: 18px;
-    }
-
-    .price {
-      margin: 12px 0;
-      font-weight: bold;
-    }
-
-    .usd {
-      font-size: 13px;
-      color: #aaa;
-    }
-
-    .buy-text {
-      color: #42e9f5;
-      text-decoration: underline;
-      font-size: 13px;
-      font-weight: 500;
-    }
-
-    .buy-text:hover {
-      color: #2bcfdc;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 11px;
-      color: #888;
-    }
-
-    .thanks {
-      color: #999;
-      font-size: 11px;
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .profile-wrapper {
-      background: rgba(66, 233, 245, 0.05);
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 20px;
-      padding: 30px 20px;
-      margin-top: 60px;
-      text-align: center;
-      box-shadow: 0 0 25px rgba(66, 233, 245, 0.2);
-    }
-
-    .profile-wrapper img.profile-img {
-      width: 120px;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      margin-bottom: 20px;
-    }
-
-    .profile-wrapper h2 {
-      font-size: 18px;
-      margin: 10px 0;
-      color: #f0f0f0;
-    }
-
-    .profile-wrapper p {
-      font-size: 14px;
-      color: #ccc;
-      max-width: 700px;
-      margin: 10px auto 18px;
-      line-height: 1.6;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="topbar">
-    <div class="title">BABIYA STORE</div>
-    <a href="/index.html" class="login-topbar">BABIYA</a>
-  </div>
-
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
-
-  <div class="side-menu" id="menu">
-    <div class="side-title">BABIYA STORE LIST</div>
-    <div class="info-box">
-      <a href="https://wa.me/+94764978991?text=" target="_blank">Contact Me</a>
-    </div>
-    <div class="info-box">
-      <a href="https://whatsapp.com/channel/0029VbBZ3693LdQV1eGRee0a" target="_blank">WHATSAPP CHANNEL</a>
-    </div>
-    <div class="info-box">
-      <a href="/store.html" target="_blank">VISIT STORE</a>
-    </div>
-        <div class="info-box">
-      <a href="/freeplugin.html" target="_blank">GET FREE PLUGIN</a>
-    </div>
-    <div class="thanks">
-      Thanks For Using<br/>BABIYA STORE
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="profile-wrapper">
-      <img class="profile-img" src="https://i.postimg.cc/WbkzQRHq/wa-94769760700-dp.jpg" alt="Sula Store Profile">
-      <h2>BABIYA STORE</h2>
-      <p> WELCOME TO OUR STORE </p>
-    </div>
-    </div>
-
-    <div class="plans">
-      <div class="plan">
-        <h3>WHATSAPP CHANNEL AUTO REACT</h3>
         <ul><li>1 week Unlimited Post Auto React</li></ul>
         <div class="price">RS.300 <span class="usd">(1 Week)</span></div>
         <a href="https://wa.me/+94764978991?text=Site+info" target="_blank" class="buy-text">Buy This Plan</a>
@@ -276,8 +12,8 @@
     </div>
 
      <div class="plan">
-        <h3>WHATSAPP BOT DEPLOY</h3>
-        <ul><li>Deploy</li></ul>
+        <h3>LOCATION TRACKING</h3>
+        <ul><li>Tracking</li></ul>
         <div class="price">RS.150 <span class="usd">(1 Month)</span></div>
         <a href="https://wa.me/+94764978991?text=Site+info" target="_blank" class="buy-text">Buy This Plan</a>
       </div>
@@ -298,7 +34,7 @@
 
       <div class="plan">
         <h3>HEROKU CC ADDING</h3>
-        <ul><li>Use Heroku Api Key</li></ul>
+        <ul><li>1 Month Worranty</li></ul>
         <div class="price">Rs.800 <span class="usd">(Project Sale)</span></div>
         <a href="https://wa.me/+94764978991?text=Site+info" target="_blank" class="buy-text">Buy This Plan</a>
       </div>
@@ -322,6 +58,7 @@
 
 </body>
 </html>
+
 
 
 
